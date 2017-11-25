@@ -124,8 +124,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="using-tfidf-to-identify-context-determinant-words" class="section level2">
-<h2>Using TFIDF to identify context determinant words</h2>
+<div id="using-tfidf-to-identify-context-important-words" class="section level2">
+<h2>Using TFIDF to identify context important words</h2>
 <p>In this notebook we will go into the details of how to run TFIDF step by step in code. For the full background on this topic, please checkout the SandyEdge blog post here: <a href="https://mungingdata.wordpress.com/2017/11/25/episode-1-using-tf-idf-to-identify-the-signal-from-the-noise/" class="uri">https://mungingdata.wordpress.com/2017/11/25/episode-1-using-tf-idf-to-identify-the-signal-from-the-noise/</a></p>
 <p>But before we begin, let me first introduce the mathematical equation, which I proudly spent the weekend learning the LaTex code for:</p>
 <p><span class="math display">\[ tfidf_{t,d} = tf_{t,d} \cdot \log \frac{N}{df_t} \]</span> <em>where</em> <br> <span class="math inline">\(t\)</span> = <em>term</em> <br> <span class="math inline">\(d\)</span> = <em>document</em> <br> <span class="math inline">\(tfidf_{t,d}\)</span> = <em>term <span class="math inline">\(t\)</span> <span class="math inline">\(tfidf\)</span> score for document</em> <span class="math inline">\(d\)</span> <br> <span class="math inline">\(tf_{t,d}\)</span> = <em>number of occurences of term <span class="math inline">\(t\)</span> in document <span class="math inline">\(d\)</span></em> <br> <span class="math inline">\({df_t}\)</span> = <em>number of documents containing term <span class="math inline">\(t\)</span></em> <br> <span class="math inline">\(N\)</span> = <em>total number of documents</em></p>
